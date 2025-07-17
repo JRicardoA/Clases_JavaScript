@@ -26,9 +26,17 @@ console.log(myMap)
 //clear: vacia el map
 myMap.clear()
 console.log(myMap)
-myMap = ([
-    ["Nombre","Ricardo"],
-    ["Apellido","Acosta"],
-    ["Edad",29],
-    ["Nickname","Donosoo"]
+myMap = new Map([ // al parecer si bien no necesita ser declarada de nuevo, necesita new map o genera lo que creo es un array
+["Nombre","Ricardo"],
+["Apellido","Acosta"],
+["Edad",29],
+["Nickname","Donosoo"]
 ])
+// Keys, entries y values: muestra dichos elementos
+console.log(myMap)
+console.log(myMap.keys())
+console.log(myMap.values())
+console.log(myMap.entries())
+
+//size: muestra el tamaño del mapa
+console.log(myMap.size)
